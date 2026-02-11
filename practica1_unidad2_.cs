@@ -48,12 +48,16 @@ namespace ProgramacionEstructurada22
             }
             else
             {
+               List<string> nombresTodas = new List<string>();
+               List<int> edadesTodas = new List<int>();
+        
                 List<string> nombresPersonasMayores = new List<string>();
                 List<int> edadesPersonasMayores = new List<int>();
 
                 List<string> nombresPersonasMenores = new List<string>();
                 List<int> edadesPersonasMenores = new List<int>();
 
+                         
                 for (int i = 1; i <= cantidadPersonas; i++)
                 {
                     // VALIDAR NOMBRE
@@ -74,6 +78,11 @@ namespace ProgramacionEstructurada22
                         Console.Write("Intenta de nuevo: ");
                     }
 
+                  
+                  
+                    nombresTodas.Add(nombrePersona);
+                    edadesTodas.Add(edadPersona);
+     
                     if (edadPersona >= 18)
                     {
                         nombresPersonasMayores.Add(nombrePersona);
@@ -86,7 +95,16 @@ namespace ProgramacionEstructurada22
                     }
                 }
 
-                Console.WriteLine("\n-- Personas Mayores --\n");
+              
+         Console.WriteLine("\n-- Todas las personas ingresadas --\n");
+                   for (int i = 0; i < nombresTodas.Count; i++)
+                     {
+                         Console.WriteLine(nombresTodas[i] + " - " + edadesTodas[i]);
+                     }
+
+
+         
+             Console.WriteLine("\n-- Personas Mayores --\n");
                 for (int i = 0; i < nombresPersonasMayores.Count; i++)
                 {
                     Console.WriteLine(nombresPersonasMayores[i] + " - " + edadesPersonasMayores[i]);
