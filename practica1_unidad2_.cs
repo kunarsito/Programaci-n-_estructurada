@@ -48,6 +48,8 @@ namespace ProgramacionEstructurada22
             }
             else
             {
+              
+              //Listas declaradas en las que se agregaran todos los datos
                List<string> nombresTodas = new List<string>();
                List<int> edadesTodas = new List<int>();
         
@@ -57,7 +59,7 @@ namespace ProgramacionEstructurada22
                 List<string> nombresPersonasMenores = new List<string>();
                 List<int> edadesPersonasMenores = new List<int>();
 
-                         
+               //estudiar para que se usa bien este for3          
                 for (int i = 1; i <= cantidadPersonas; i++)
                 {
                     // VALIDAR NOMBRE
@@ -83,6 +85,7 @@ namespace ProgramacionEstructurada22
                     nombresTodas.Add(nombrePersona);
                     edadesTodas.Add(edadPersona);
      
+
                     if (edadPersona >= 18)
                     {
                         nombresPersonasMayores.Add(nombrePersona);
