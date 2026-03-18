@@ -35,7 +35,7 @@ namespace CalculadoraFunciones
 
                 // Preguntar si desea continuar
                 Console.Write("\n¿Desea realizar otro cálculo? (s/n): ");
-                string respuesta = Console.ReadLine().ToLnower();
+                string respuesta = Console.ReadLine().ToLower();
                 continuar = (respuesta == "s" || respuesta == "si");
             }
             
